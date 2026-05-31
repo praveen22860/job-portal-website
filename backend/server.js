@@ -14,12 +14,12 @@ app.listen(process.env.PORT, () => {
 
 const express = require('express');
 const cors = require('cors');
-const app = express();
+const app1 = express();
 
 // Use the PORT provided by Render or fallback to 5000 locally
 const PORT = process.env.PORT || 5000; 
 
-app.use(cors({
+app1.use(cors({
   origin: process.env.FRONTEND_URL, // This environment variable will be set in Render
   credentials: true
 }));
